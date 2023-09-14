@@ -10,7 +10,6 @@ let = ra.choice(list_of_str).lower()
 n = len(let)
 list = ["-"]*n
 
-print("no.of lives you have 6")
 print("find these letters:",list)
 si= 6
 ch=0
@@ -23,11 +22,11 @@ while(si>0):
             ltr = let[pos]
             if ltr==i:
                 list[pos]=i
-        print(list,'\t'"lives:",si)
+        print(list)
         print(states[si])
     if i not in let:
         si-=1
-        print(list,'\t'"lives:",si)
+        print(list)
         print(states[si])
 
     if '-' not in list:
